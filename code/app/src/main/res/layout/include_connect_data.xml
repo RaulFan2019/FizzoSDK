@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_data"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="@color/tv_mostly"
+        android:layout_margin="15dp"
+        android:text="data"/>
+
+    <!-- 心率数据 -->
+    <LinearLayout
+        style="@style/ConnectCheckListLl">
+        <TextView
+            style="@style/ConnectCheckListTvKey"
+            android:text="@string/data_hr"/>
+        <TextView
+            android:id="@+id/tv_data_hr"
+            style="@style/ConnectCheckListTvValue"/>
+    </LinearLayout>
+
+    <!-- 步频 -->
+    <LinearLayout
+        style="@style/ConnectCheckListLl">
+        <TextView
+            style="@style/ConnectCheckListTvKey"
+            android:text="@string/data_sport_size"/>
+        <TextView
+            android:id="@+id/tv_data_cadence"
+            style="@style/ConnectCheckListTvValue"/>
+    </LinearLayout>
+
+    <!-- 步数（灯管打开时） -->
+    <LinearLayout
+        style="@style/ConnectCheckListLl">
+        <TextView
+            style="@style/ConnectCheckListTvKey"
+            android:text="@string/data_step_light"/>
+        <TextView
+            android:id="@+id/tv_data_step_light"
+            style="@style/ConnectCheckListTvValue"/>
+    </LinearLayout>
+
+    <View style="@style/DividerH"/>
+</LinearLayout>

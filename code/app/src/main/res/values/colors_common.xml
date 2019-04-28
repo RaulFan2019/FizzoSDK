@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题色 -->
+    <color name="primary">#3F51B5</color>
+    <color name="primaryDark">#303F9F</color>
+    <color name="accent">#FF4081</color>
+
+    <!-- 通用色块 -->
+    <color name="bg_base">#343339</color>
+    <color name="bg_divider">#DADADA</color>
+    <color name="bg_base_gray">#F5F5F5</color>
+
+    <!-- 主要文字 -->
+    <color name="tv_mostly">#323333</color>
+    <!-- 辅助文字 -->
+    <color name="tv_secondly">#777777</color>
+    <!-- 错误文字颜色 -->
+    <color name="tv_error">#FF4081</color>
+
+    <!-- button -->
+    <color name="btn_mostly_tv">#ffffff</color>
+    <color name="btn_white_tv">#323333</color>
+</resources>

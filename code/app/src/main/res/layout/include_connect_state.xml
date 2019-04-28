@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 设备连接状态 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="54dp"
+            android:background="@drawable/ic_fizzo_device" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DDDDDD"
+                android:textColor="@android:color/black"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/tv_device_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DD:DD:DD:DD:DD"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_connect_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connecting..."
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <!-- 确认生产厂家状态 -->
+    <LinearLayout
+        style="@style/ConnectCheckListLl">
+        <TextView
+            style="@style/ConnectCheckListTvKey"
+            android:text="@string/check_manufacturer"/>
+        <TextView
+            android:id="@+id/tv_check_manufacturer"
+            style="@style/ConnectCheckListTvValue"/>
+    </LinearLayout>
+
+    <!-- 写入UTC的状态 -->
+    <LinearLayout
+        style="@style/ConnectCheckListLl">
+        <TextView
+            style="@style/ConnectCheckListTvKey"
+            android:text="@string/check_write_utc"/>
+        <TextView
+            android:id="@+id/tv_check_write_utc"
+            style="@style/ConnectCheckListTvValue"/>
+    </LinearLayout>
+
+    <!-- 监听心率变化 -->
+    <LinearLayout
+        style="@style/ConnectCheckListLl">
+        <TextView
+            style="@style/ConnectCheckListTvKey"
+            android:text="@string/check_notify_hr"/>
+        <TextView
+            android:id="@+id/tv_check_notify_hr"
+            style="@style/ConnectCheckListTvValue"/>
+    </LinearLayout>
+
+    <!-- 手环版本号 -->
+    <LinearLayout
+        style="@style/ConnectCheckListLl">
+        <TextView
+            style="@style/ConnectCheckListTvKey"
+            android:text="@string/check_firmware"/>
+        <TextView
+            android:id="@+id/tv_check_firmware"
+            style="@style/ConnectCheckListTvValue"/>
+    </LinearLayout>
+
+    <!-- 监听私有服务状态 -->
+    <LinearLayout
+        style="@style/ConnectCheckListLl">
+        <TextView
+            style="@style/ConnectCheckListTvKey"
+            android:text="@string/check_private_service"/>
+        <TextView
+            android:id="@+id/tv_check_private_service"
+            style="@style/ConnectCheckListTvValue"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="@string/action_clear"/>
+
+    <View style="@style/DividerH"/>
+
+</LinearLayout>

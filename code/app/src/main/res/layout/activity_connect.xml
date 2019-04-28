@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout style="@style/TitleLayout">
+
+        <TextView
+            style="@style/TitleTitleTv"
+            android:text="FIZZO SDK" />
+
+        <LinearLayout style="@style/TitleRightBtnLy">
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                style="@style/TitleRightButton"
+                android:text="disconnect"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_connect_state"/>
+            <include layout="@layout/include_connect_data"/>
+            <include layout="@layout/include_connect_function"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

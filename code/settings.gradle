@@ -1,0 +1,1 @@
+include ':app',':fizzoWatchLib',':dfulib',':dfu'

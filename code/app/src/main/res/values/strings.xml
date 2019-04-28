@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FizzoWatchSDKSample</string>
+
+    <string name="check_manufacturer">检查生产厂家</string>
+    <string name="check_private_service">监听私有服务</string>
+    <string name="check_write_utc">写入UTC</string>
+    <string name="check_notify_hr">监听心率数据变化</string>
+    <string name="check_firmware">手环版本号</string>
+
+
+    <string name="data_hr">心率</string>
+    <string name="data_cadence">步频</string>
+    <string name="data_step_light">步数(灯管打开时)</string>
+    <string name="data_sport_size">运动数量</string>
+
+
+</resources>

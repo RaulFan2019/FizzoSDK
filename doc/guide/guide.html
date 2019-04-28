@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<title>开发指南 | FIZZO WATCH SDK</title>
+<link href="../assets/android-developer-docs-devguide.css" rel="stylesheet" type="text/css" />
+<script src="../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../assets/android-developer-docs.js" type="text/javascript"></script>
+<script src="../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../");
+</script>
+<noscript>
+<style type="text/css">
+html, body {
+	overflow: auto;
+}
+#body-content {
+	position: relative;
+	top: 0;
+}
+#doc-content {
+	overflow: visible;
+	border-left: 3px solid #666;
+}
+#side-nav {
+	padding: 0;
+}
+#side-nav .toggle-list ul {
+	display: block;
+}
+#resize-packages-nav {
+	border-bottom: 3px solid #666;
+}
+</style>
+</noscript>
+</head><body class="gc-documentation">
+<a name="top"></a>
+<div id="header">
+  <div id="headerLeft"> <a href="../index.html" tabindex="-1"><img
+              src="../assets/images/bg_logo.png" alt="Android Developers" /></a>
+    <ul id="header-tabs" class="sdk">
+      <li id="home-link"><a href="../home.html"> <span class="en">首页</span> </a></li>
+      <li id="guide-link"><a href="../guide/guide.html" onClick="return loadLast('guide')"> <span class="en">开发指南</span> </a></li>
+      <li id="reference-link"><a href="../reference/packages.html" onClick="return loadLast('reference')"> <span class="en">接口文档</span> </a></li>
+    </ul>
+  </div>
+  <!-- headerLeft --> 
+  <script type="text/javascript">
+        <!--  
+        changeTabLang(getLangPref());
+        //-->
+      </script> 
+</div>
+<!-- header -->
+
+<div class="g-unit" id="doc-content" >
+  <div id="jd-header" class="guide-header" > <span class="crumb">&nbsp;</span>
+    <h1>FIZZO WATCH SDK</h1>
+  </div>
+  <div id="jd-content">
+    <h2 id="quickstart">权限配置</h2>
+    <pre>    &lt;uses-permission android:name=&quot;android.permission.BLUETOOTH&quot; /&gt;<br>    &lt;uses-permission android:name=&quot;android.permission.BLUETOOTH_ADMIN&quot; /&gt;</pre>
+    <h2 id="NextSteps0">初始化SDK</h2>
+    <p>在<strong>Application</strong>类的生命周期<strong>OnCreate</strong>中，初始化SDK。</p>
+    <pre>
+@Override<br>public&#32;void&#32;onCreate()&#32;{<br>&#32;&#32;&#32;&#32;super.onCreate();<br>&#32;&#32;&#32;&#32;FwManager.getManager().init(this);<br>}</pre>
+  </div>
+  <div id="footer">
+    <div id="copyright"> 上海互韦涵电子科技有限公司 版权所有 </div>
+  </div>
+  <!-- end footer --> 
+  
+</div>
+<!-- end doc-content --> 
+
+<!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5831155-1");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

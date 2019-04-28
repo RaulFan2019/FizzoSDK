@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_function"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="function"
+        android:textColor="@color/tv_mostly"
+        android:textSize="24dp" />
+
+    <!-- 开关 光管 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_light_off"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/action_light_off"/>
+
+        <Button
+            android:id="@+id/btn_light_on"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/action_light_on"/>
+    </LinearLayout>
+
+
+    <!-- 设置运动模式 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动模式"/>
+
+        <EditText
+            android:id="@+id/et_sport_type"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="1"/>
+
+        <Button
+            android:id="@+id/btn_set_sport_type"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="设置"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_vibrate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_vibrate"/>
+
+    <Button
+        android:id="@+id/btn_sync_hr_data"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_sync_hr_data"/>
+
+    <Button
+        android:id="@+id/btn_read_history_step"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_read_history_step"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_clear_watch"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_clear_watch"/>
+
+
+
+
+</LinearLayout>

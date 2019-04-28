@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- ConnectState Check List -->
+    <style name="ConnectCheckListLl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="ConnectCheckListTvKey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="ConnectCheckListTvValue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+</resources>

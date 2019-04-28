@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "cn.fizzo.watch.sdksample"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    jcenter()
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+
+    implementation 'com.android.support:multidex:1.0.3'
+//    implementation(name: 'fizzowatchlib', ext: 'aar')
+    //UI注解
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //事件处理
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //xUtils 框架
+    implementation 'org.xutils:xutils:3.4.0'
+    //权限控制
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    //ssh 支持库
+    implementation 'com.jcraft:jsch:0.1.51'
+    //fizzo sdk
+    implementation project(':fizzoWatchLib')
+
+    implementation project(':dfulib')
+//    implementation project(':dfu')
+}

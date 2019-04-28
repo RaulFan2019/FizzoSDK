@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="action_back">返回</string>
+
+    <string name="action_light_off">关光管</string>
+    <string name="action_light_on">开光管</string>
+    <string name="action_vibrate">振动(短按电源键回应振动)</string>
+    <string name="action_clear">清除蓝牙缓存</string>
+    <string name="action_read_history_step">读取历史步数</string>
+    <string name="action_sync_hr_data">同步心跳数据</string>
+    <string name="action_clear_watch">清空手表缓存</string>
+
+
+</resources>
